@@ -11,7 +11,7 @@ layout: main
       </p>
       <small>
         <i class="fa fa-calendar-o"></i>
-        May 2019
+        June 2019
       </small>
     </div>
     <a href="/call-for-papers/" target="_blank" class="btn btn-default btn-lg">Call for Papers</a>
