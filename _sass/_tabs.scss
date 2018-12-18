@@ -1,0 +1,49 @@
+.tab-container {
+  background-color: $tab-content-bg;
+}
+
+.nav-tabs,
+.nav-tabs.nav-justified {
+  li {
+    border-bottom: 1px solid $white;
+
+    a {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 3px solid transparent;
+      color: $white;
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: $tab-font-size;
+      font-weight: $tab-font-weight;
+      opacity: .4;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        opacity: 1;
+      }
+    }
+
+    &.active {
+      background-color: #21274e;
+
+      a {
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 3px solid $white;
+        margin-bottom: 0;
+        color: $white;
+        opacity: 1;
+
+        &:hover,
+        &:focus {
+          border: 0;
+          border-bottom: 3px solid $white;
+        }
+      }
+    }
+  }
+}

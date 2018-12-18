@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+
+// Colors -------------------------
+$primary: #248eb0;
+$secondary: #f5951a;
+$primary-darker: #010b4b;
+$white: #fff;
+$text-color: #090d2b;
+$gray: #acaeb9;
+
+// Typography -------------------------
+$font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+$font-family-serif: 'Merriweather', Georgia, serif;
+
+$heading-color: $text-color;
+$heading-weight: 900;
+
+$h1-size: 2em;
+$h1-margin: 60px;
+
+// Navbar -------------------------
+$navbar-bg: transparent;
+$navbar-link: $white;
+$navbar-hover: $secondary;
+
+$navbar-btn: $secondary;
+$navbar-btn-hover: $primary-darker;
+$navbar-btn-link: $white;
+$navbar-btn-link-hover: $white;
+
+$navbar-mobile: $text-color;
+
+$dropdown-bg: $white;
+$dropdown-width: 140px;
+
+$stickynav-bg: $white;
+$stickynav-link: $text-color;
+$stickynav-link-hover: $secondary;
+
+// Header -------------------------
+$header-bg-color: $primary-darker;
+$header-color: $white;
+
+// Tab navigation
+$tab-content-bg: rgba(36, 48, 176, .15);
+$tab-font-size: 24px;
+$tab-font-weight: 900;
+
+$nav-tabs-border-width:                       0;
+$nav-tabs-border-radius:                      0;
+$nav-tabs-active-link-hover-color:            $white;
+
+// Tables
+$table-border-width:            0;

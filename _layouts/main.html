@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="{% if page.body-class %}{{ page.body-class }}{% endif %}" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
+        </div>
+        {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+<!-- #main-wrapper -->
+
+<!-- jquery -->
+<script src="/js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
+
+<script src="/js/scripts.js"></script>
+
+</body>
+</html>

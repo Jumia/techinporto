@@ -1,0 +1,349 @@
+.grid {
+  display: grid;
+  justify-content: center;
+
+  &-2 {
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+
+    @media (max-width : 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width : 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width : 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.grid-schedule {
+  display: grid;
+  grid-template-columns: 225px auto;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.section-wrapper {
+  padding: 60px 0;
+}
+
+.sponsors {
+  img {
+    height: 30px;
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
+
+  a:hover,
+  a:focus {
+    border: 0;
+  }
+}
+
+.speakers-grid {
+
+  // Display grid on desktop
+  @media (min-width : 768px) {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.speaker {
+  &-item {
+    display: block;
+    text-align: center;
+
+    @media (max-width : 768px) {
+      margin-bottom: 30px;
+    }
+
+    .overlay {
+      background-color: #0e155580;
+      border-radius: 50%;
+      bottom: 0;
+      height: 250px;
+      left: 50%;
+      margin-left: -125px;
+      opacity: 1;
+      position: absolute;
+      transition: opacity .3s ease-in-out;
+      top: 0;
+      width: 250px;
+      z-index: 1;
+    }
+
+    &:hover,
+    &:focus {
+      border: 0;
+
+      .overlay {
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+      }
+    }
+  }
+
+  &-photo {
+    border-radius: 50%;
+    height: 250px;
+    margin-bottom: 30px;
+    width: 250px;
+
+    &-container {
+      position: relative;
+    }
+  }
+
+  &-name {
+    color: $primary;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+
+  &-company {
+    color: $white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+#section-schedule {
+  background-attachment: fixed;
+  background-color: $primary-darker;
+  background-image: url('/img/speakers@2x.png');
+  background-size: cover;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+#section-speaker {
+  background-color: $primary-darker;
+  background-image: url('/img/speakers@2x.png');
+  background-size: cover;
+}
+
+.section-speaker {
+  background-color: $primary-darker;
+  background-size: cover;
+
+  &-title {
+    background-image: url('/img/2017/05.jpg');
+    background-size: cover;
+    padding: 200px 0 60px 0;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  &-more {
+    background-image: url('/img/2017/02.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+
+    // don't use background attachment on mobile
+    @media (min-width : 768px) {
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width : 768px) {
+    .speaker {
+      text-align: center;
+    }
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-6 {
+  margin-bottom: 60px;
+}
+
+.section-papers {
+  background-color: $primary-darker;
+  background-size: cover;
+  color: $white;
+
+  &-title {
+    background-image: url('/img/2017/01.jpg');
+    background-size: cover;
+    padding: 200px 0;
+  }
+
+  &-code {
+    background-image: url('/img/2017/05.jpg');
+    background-position: center;
+    padding: 200px 0 60px;
+  }
+
+  &-deadline {
+    background-image: url('/img/2017/02.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+
+    // don't use background attachment on mobile
+    @media (min-width : 768px) {
+      background-attachment: fixed;
+    }
+  }
+
+  &-help {
+    background-image: url('/img/2017/04.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $secondary;
+    padding: 60px 0;
+    text-align: center;
+
+    // change width on mobile
+    @media (max-width : 768px) {
+      padding: 30px 0 0;
+    }
+  }
+
+  .box-orange {
+    bottom: 13px;
+    height: 33px;
+    background-image: url('/img/2017/line.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -30px;
+    width: 150%;
+    z-index: 1;
+
+    // change width on mobile
+    @media (max-width : 768px) {
+      bottom: -10px;
+      width: 100%;
+    }
+  }
+
+  .box-orange-left {
+    bottom: 32px;
+    height: 33px;
+    background-image: url('/img/2017/line-right.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -13px;
+    width: 150%;
+    z-index: 1;
+
+    // change width on mobile
+    @media (max-width : 768px) {
+      bottom: -10px;
+      left: auto;
+      right: -15px;
+      width: 100%;
+    }
+  }
+
+  .cover {
+    position: relative;
+  }
+
+  img {
+    object-fit: contain;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+
+    // change width on mobile
+    @media (max-width : 768px) {
+      height: auto;
+    }
+  }
+
+  // Mobile styles
+  @media (max-width : 768px) {
+    ul {
+      margin: 30px 0;
+    }
+  }
+}
+
+#section-venue {
+  background-image: url('/img/hardclubPorto.jpg');
+  background-size: cover;
+  position: relative;
+
+  // don't use background attachment on mobile
+  @media (min-width : 768px) {
+    background-attachment: fixed;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .lead {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 60px;
+  }
+
+  .overlay {
+    background-color: #010b4be6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: $primary-darker;
+  color: $white;
+  font-size: .8em;
+  padding: 30px 0;
+
+  .social {
+    &:hover,
+    &:focus {
+      color: $primary;
+      border: 0;
+    }
+  }
+}
+
+.social {
+  &:hover,
+  &:focus {
+    border: 0;
+  }
+}

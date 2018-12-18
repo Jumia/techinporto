@@ -1,0 +1,217 @@
+body {
+    border: 0;
+}
+
+.sticky-nav a.navbar-brand {
+    color: black;
+}
+
+a.navbar-brand {
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.navbar-brand small {
+    font-weight: 100;
+}
+
+section a {
+  color: $secondary;
+
+  &.social {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+:target:before {
+    content:"";
+    display:block;
+    height:60px; /* fixed header height*/
+    margin: 0; /* negative fixed header height */
+}
+
+.page-cfp .header .navbar .container .navbar-header {
+    color: black;
+}
+
+.page-cfp .about-event {
+    font-size: 19px;
+    color: #353e55;
+    padding-top: 100px;
+}
+
+.page-cfp  .about-event .lead {
+    line-height: 1.4em;
+}
+
+.sticky-nav {
+    transition: none;
+    -webkit-transition: none;
+}
+
+h1 {
+    color: #353e55;
+    font-weight: 500;
+}
+
+#googleMap {
+    margin-bottom: 25px;
+}
+
+.parallax-window h1 {
+    color: white;
+}
+
+.parallax-mirror img {
+    opacity: 0.4;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: black;
+    color: white;
+}
+
+.tp-dottedoverlay, .fullvideo-cover {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.jumbotron-old {
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(/img/view_porto_bg.jpg) no-repeat bottom center scroll;
+  height: auto;
+}
+
+/** Sponsors **/
+
+#section-communities .sponsors img {
+    height: 60px;
+}
+
+.sponsors img.jumia-logo {
+    height: 60px;
+}
+
+.sponsors img.aws-logo {
+    height: 110px;
+}
+
+.sponsors img.google-logo {
+    height: 110px;
+}
+
+.sponsors img.rumos-logo {
+    height: 57px;
+}
+
+.sponsors img.microsoft-logo {
+    height: 57px;
+}
+
+.sponsors img.bitmaker {
+    height: 18px;
+}
+
+.sponsors img.devops-logo {
+    height: 60px;
+}
+
+.sponsors img.oposec-logo {
+    height: 60px;
+}
+
+.sponsors img.ptm-logo {
+    height: 60px;
+}
+.sponsors img.portoux-logo {
+    height: 60px;
+}
+
+#section-speaker .lead {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.jumbotron a:hover {
+    color: #f5951a;
+    border-color: #f5951a;
+}
+
+.communities-grid {
+  text-align: center;
+    // Display grid on desktop
+    @media (min-width : 768px) {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+      }
+}
+
+.prime-grid {
+    // Display grid on desktop
+    @media (min-width : 768px) {
+       width: 70%;
+       margin-left: auto;
+       margin-right: auto;
+       display: grid;
+       grid-column-gap: 30px;
+       grid-row-gap: 30px;
+       grid-template-columns: repeat(2, 1fr);
+       text-align: center;
+     }
+   }
+
+
+.le-grid {
+    // Display grid on desktop
+    @media (min-width : 768px) {
+       width: 70%;
+       margin-left: auto;
+       margin-right: auto;
+       display: grid;
+       grid-column-gap: 30px;
+       grid-row-gap: 30px;
+       grid-template-columns: repeat(2, 1fr);
+       text-align: center;
+    }
+}
+
+.schedule-time {
+    margin-right: 0;
+}
+
+#section-schedule .grid-schedule {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.room-col {
+    width: 50%;
+}
+@media (max-width : 768px) {
+    #section-speaker .speaker-item .overlay {
+        opacity: 0;
+    }
+}
+
+.table-schedule .orange-room {
+    color: #ef6710;
+}
+
+table tbody tr td.valign-middle {
+    vertical-align: middle;
+}
