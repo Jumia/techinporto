@@ -82,10 +82,9 @@ jQuery(function ($) {
 
     (function () {
         if ($('#googleMap').length > 0) {
-
             //set your google maps parameters
-            var $latitude  = 41.1420511, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-                $longitude = -8.6148724,
+            var $latitude  = 41.156676, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
+                $longitude = -8.643647,
                 $map_zoom  = 18;
             /* ZOOM SETTING */
 
